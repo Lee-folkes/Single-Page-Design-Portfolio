@@ -130,8 +130,40 @@ select {
 
 body{
   font-family: var(--ff-primary);
-  background-color: var(--clr-neutral-100);
+  background-color: var(--clr-neautral-100);
 }
+
+/* header & title */
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-heading{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-heading > h1{
+    font-size: var(--fs-heading-l);
+    font-weight: var(--fw-bold);
+    color: var(--clr-primary-900);
+    margin-bottom: var(--size-500);
+}
+
+.page-subheading{
+        font-size: var(--fs-body);
+        color: var(--clr-primary-600);
+        max-width: 53ch;
+}
+
+
+
+
 
 
 
