@@ -51,7 +51,7 @@
     --size-800: 4rem;
     --size-900: 8.5rem;
 
-    --swiper-navigation-size: 4rem;
+    --swiper-navigation-size: 6rem;
 
   
   }
@@ -235,6 +235,7 @@ body{
 }
 
 .hero-wrapper{
+    padding: 1rem;
     position: relative;
     display: grid;
     justify-content: center;
@@ -296,8 +297,12 @@ body{
     justify-content: center;
 }
 
+.swiper-heading h2{
+font-size: var(--fs-500);
+}
+
 .swiper {
-    height: 400px;
+    height: 450px;
     
 }
 
@@ -332,7 +337,7 @@ body{
     border: none;
     border-radius: 100%;
     width: 100%;
-    top: -20%;
+    top: -15%;
 }
 .swiper-button-next button{
     position: absolute;
@@ -344,7 +349,7 @@ body{
     width: 100%;
     border: none;
     border-radius: 100%;
-    top: -20%;
+    top: -15%;
 }
 
 /* bottom cta section */
