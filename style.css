@@ -178,6 +178,7 @@ body{
 }
 
 /* hero */
+
 .hero-section{
     display: flex;
     align-items: center;
@@ -249,16 +250,34 @@ body{
     "graphic graphic illus illus motion motion";
 }
 
+/* hero tablet layout */
+
+@media (max-width: 768px){
+
+  .hero-wrapper{
+    grid-template-columns: 10rem 10rem 10rem 10rem;
+    grid-template-rows: 11rem 11rem 11rem;
+    grid-template-areas: 
+    "graphic graphic ui apps"
+    "graphic graphic illus illus"
+    "photo photo motion motion";
+  }
+}
+
+/* cta */
+
 .cta-section{
+  
     margin-inline: auto;
     display: flex;
     flex-direction: row;
     gap:7.8rem;
     align-items: center;
+    
 }
 
 .cta-image{
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 
 .cta-text{
@@ -288,6 +307,50 @@ body{
 
 .cta-text .button:hover{
     background-color: var(--clr-accent-yellow);
+}
+
+/* cta tablet layout */
+
+
+@media (max-width: 768px){
+
+  .cta-section{
+  
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+    align-items: center;
+    
+}
+  .cta-image{
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    width: 40vw;
+    height: 50vw;
+    
+  }
+
+  .cta-image img{
+    position: absolute;
+    
+    max-width: 115%;
+    max-height: 115%;
+    top: 0%;
+    left: -15%;
+    object-fit: cover;
+  }
+
+  .cta-text{
+    gap:1rem;
+}
+
+.cta-text > h2{
+    font-size: var(--fs-heading-m-tablet);
+    line-height: 2.5rem;
+}
+
 }
 
 /* swiper */
