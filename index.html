@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Design Portfolio</title>
 </head>
@@ -23,54 +24,96 @@
                 <p>With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>
             </div>
         </div>
-
-        <div class="hero-wrapper container">
-            <div class="card graphic-design">
-                <card-image>
-                    <img src="./img/pattern-graphic-design.svg" alt="">
-                </card-image>
-                <card-title>
-                    <h2>Graphic Design</h2>
-                </card-title>
-            <div class="card ui">
-                <card-image>
-                    <img src="./img/pattern-ui-ux.svg" alt="">
-                </card-image>
-                <card-title>
-                    <h2>UI/UX</h2>
-                </card-title>
-            <div class="card apps">
-                <card-image>
-                    <img src="./img/pattern-apps.svg" alt="">
-                </card-image>
-                <card-title>
-                    <h2>Apps</h2>
-                </card-title>
-            <div class="card photo">
-                <card-image>
-                    <img src="./img/pattern-photography.svg" alt="">
-                </card-image>
-                <card-title>
-                    <h2>Photography</h2>
-                </card-title>
-            <div class="card illustrations">
-                <card-image>
-                    <img src="./img/pattern-illustrations.svg" alt="">
-                </card-image>
-                <card-title>
-                    <h2>Illustrations</h2>
-                </card-title>
-            <div class="card motion">
-                <card-image>
-                    <img src="./img/pattern-motion-graphics.svg" alt="">
-                </card-image>
-                <card-title>
-                    <h2>Motion Graphics</h2>
-                </card-title>
+        <section class="hero-section container margin-top-700">
+            <div class="hero-wrapper">
+                <div class="card graphic-design">
+                    <div class="card-image">
+                        <img src="./img/pattern-graphic-design.svg" alt="">
+                    </div>
+                    <div class="card-title">
+                        <h2>Graphic Design</h2>
+                    </div>
+                </div>
+                <div class="card ui">
+                    <div class="card-image">
+                        <img src="./img/pattern-ui-ux.svg" alt="">
+                    </div>
+                    <div class="card-title">
+                        <h2>UI/UX</h2>
+                    </div>
+                </div>
+                <div class="card apps">
+                    <div class= "card-image">
+                        <img src="./img/pattern-apps.svg" alt="">
+                    </div>
+                    <div class = "card-title">
+                        <h2>Apps</h2>
+                    </div>
+                </div>
+                <div class="card photo">
+                    <div class= "card-image">
+                        <img src="./img/pattern-photography.svg" alt="">
+                    </div>
+                    <div class = "card-title">
+                        <h2>Photography</h2>
+                    </div>
+                </div>
+                <div class="card illustrations">
+                    <div class= "card-image">
+                        <img src="./img/pattern-illustrations.svg" alt="">
+                    </div>
+                    <div class = "card-title">
+                        <h2>Illustrations</h2>
+                    </div>
+                </div>
+                <div class="card motion">
+                    <div class= "card-image">
+                        <img src="./img/pattern-motion-graphics.svg" alt="">
+                    </div>
+                    <div class = "card-title">
+                        <h2>Motion Graphics</h2>
+                    </div>
+                </div>
             </div>
+        </section>
+        <section class="cta-section container margin-top-900">
+            <div class="cta-image">
+                <img src="./img/image-amy.webp" alt="">
+            </div>
+            <div class="cta-text">
+                <h2>I’m Amy, and I’d love to work on your next project</h2>
+                <p>I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations to complete mobile apps. I’m also handy with a camera!</p>
+                <button class="button">Free Consultation</button>
+            </div>
+        </section>
+                    <!-- Slider main container -->
+        <div class="swiper container margin-top-700">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="./img/image-slide-1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/image-slide-2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/image-slide-3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/image-slide-4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/image-slide-5.jpg" alt=""></div>
+            </div>
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+    
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"><button></button></div>
+            <div class="swiper-button-next"><button></button></div>
+    
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+        <div class="swiper-controls">
+            
         </div>
 
-
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="./app.js"></script>
 </body>
 </html>
