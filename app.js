@@ -19,15 +19,7 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
 
-    centeredSlidesBounds: 'true',
-
-//     effect: 'coverflow',
-//   coverflowEffect: {
-//     rotate: 30,
-//     slideShadows: false,
-//   },
-
-    
+    centeredSlides: 'true',
 
     slidesPerView: 1,
   spaceBetween: 5,
@@ -41,12 +33,14 @@ const swiper = new Swiper('.swiper', {
     },
     // when window width is >= 480px
     480: {
-      slidesPerView: 3,
+      slidesPerView: 2.5,
       spaceBetween: 15
     },
     // when window width is >= 640px
     640: {
-      slidesPerView: 3,
+        
+        watchSlidesProgress: true,
+      slidesPerView: 2.5,
       spaceBetween: 20
     }
   }
