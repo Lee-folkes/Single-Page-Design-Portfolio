@@ -242,7 +242,9 @@ body{
     justify-content: center;
     width: 100%;
     margin: 0;
+    /* grid-template-columns: repeat(10rem); */
     grid-template-columns: 10rem 10rem 10rem 10rem 10rem 10rem;
+    /* grid-template-rows: repeat(max-height (11rem)); */
     grid-template-rows: 11rem 11rem;
     gap: 1.5rem;
     grid-template-areas: 
@@ -274,10 +276,6 @@ body{
     gap:7.8rem;
     align-items: center;
     
-}
-
-.cta-image{
-    /* max-width: 100%; */
 }
 
 .cta-text{
@@ -367,7 +365,6 @@ font-size: var(--fs-500);
 .swiper {
     min-height: 40vw;
     max-height: 60vw;
-    
 }
 
 .swiper-slide img{
