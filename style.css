@@ -182,6 +182,7 @@ body{
 .hero-section{
     display: flex;
     align-items: center;
+    margin-inline: auto;
 }
 .card{
     position: relative;
@@ -208,31 +209,43 @@ body{
 .graphic-design{
     background-color: var(--clr-accent-blue);
     grid-area: graphic;
+
 }
 
 .ui{
     background-color: var(--clr-accent-yellow);
     grid-area: ui;
+
 }
 
 .apps{
     background-color:var(--clr-accent-pink);
     grid-area: apps;
+
 }
 
 .photo{
     background-color: var(--clr-accent-cyan);
     grid-area: photo;
+
 }
 
 .illustrations{
     background-color: var(--clr-accent-red);
     grid-area: illus;
+
 }
 
 .motion{
     background-color: var(--clr-accent-purple);
     grid-area: motion;
+
+}
+
+.card-content{
+  width: 10vw;
+  height: 11vw;
+  
 }
 
 .hero-wrapper{
@@ -242,10 +255,10 @@ body{
     justify-content: center;
     width: 100%;
     margin: 0;
-    /* grid-template-columns: repeat(10rem); */
-    grid-template-columns: 10rem 10rem 10rem 10rem 10rem 10rem;
+    grid-template-columns: repeat(6, 1fr);
+    /* grid-template-columns: 10rem 10rem 10rem 10rem 10rem 10rem; */
     /* grid-template-rows: repeat(max-height (11rem)); */
-    grid-template-rows: 11rem 11rem;
+    /* grid-template-rows: repeat(2, auto); */
     gap: 1.5rem;
     grid-template-areas: 
     "graphic graphic ui apps photo photo"
@@ -254,15 +267,36 @@ body{
 
 /* hero tablet layout */
 
-@media (max-width: 768px){
+@media (max-width: 880px){
 
   .hero-wrapper{
-    grid-template-columns: 10rem 10rem 10rem 10rem;
-    grid-template-rows: 11rem 11rem 11rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 8rem);
+    /* grid-template-columns: 10rem 10rem 10rem 10rem;
+    grid-template-rows: 11rem 11rem 11rem; */
     grid-template-areas: 
     "graphic graphic ui apps"
     "graphic graphic illus illus"
     "photo photo motion motion";
+  }
+}
+
+/* hero mobile layout */
+
+@media (max-width: 500px){
+
+  .hero-wrapper{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 9rem);
+    /* grid-template-columns: 10rem 10rem 10rem 10rem;
+    grid-template-rows: 11rem 11rem 11rem; */
+    grid-template-areas: 
+    "graphic graphic"
+    "graphic graphic" 
+    "ui apps"
+    "illus illus"
+    "photo photo"
+    "motion motion";
   }
 }
 
