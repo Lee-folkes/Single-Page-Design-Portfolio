@@ -256,9 +256,6 @@ body{
     width: 100%;
     margin: 0;
     grid-template-columns: repeat(6, 1fr);
-    /* grid-template-columns: 10rem 10rem 10rem 10rem 10rem 10rem; */
-    /* grid-template-rows: repeat(max-height (11rem)); */
-    /* grid-template-rows: repeat(2, auto); */
     gap: 1.5rem;
     grid-template-areas: 
     "graphic graphic ui apps photo photo"
@@ -272,8 +269,6 @@ body{
   .hero-wrapper{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 8rem);
-    /* grid-template-columns: 10rem 10rem 10rem 10rem;
-    grid-template-rows: 11rem 11rem 11rem; */
     grid-template-areas: 
     "graphic graphic ui apps"
     "graphic graphic illus illus"
@@ -288,8 +283,6 @@ body{
   .hero-wrapper{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 9rem);
-    /* grid-template-columns: 10rem 10rem 10rem 10rem;
-    grid-template-rows: 11rem 11rem 11rem; */
     grid-template-areas: 
     "graphic graphic"
     "graphic graphic" 
@@ -397,8 +390,9 @@ font-size: var(--fs-500);
 }
 
 .swiper {
-    min-height: 40vw;
-    max-height: 60vw;
+    min-height: 30vw;
+    max-height: 65vw;
+    padding-bottom: 3.5rem;
 }
 
 .swiper-slide img{
@@ -408,6 +402,7 @@ font-size: var(--fs-500);
     display: flex;
     justify-content: center;
     gap:2rem;
+    
 }
 
 .button-wrapper button:hover{
@@ -416,6 +411,7 @@ font-size: var(--fs-500);
 
 .swiper-button-prev{
     position: relative;
+    z-index: 100;
 
 }
 .swiper-button-next{
@@ -447,6 +443,7 @@ font-size: var(--fs-500);
     top: 90%;
 }
 
+
 /* bottom cta section */
 
 .cta-bottom-wrapper button{
@@ -477,6 +474,22 @@ font-size: var(--fs-500);
     color: var(--clr-neautral-100);
     max-width: 34rem;
     padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* bottom cta mobile/tablet layout*/
+@media(max-width:935px){
+
+  .cta-bottom-wrapper{
+    flex-direction: column;
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .cta-bottom-text{
+    padding-right: 0;
+  }
+  
 }
 
 

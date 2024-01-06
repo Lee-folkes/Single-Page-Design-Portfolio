@@ -28,18 +28,16 @@ const swiper = new Swiper('.swiper', {
   breakpoints: {
     // when window width is >= 320px
     320: {
-      slidesPerView: 2,
-      spaceBetween: 10
+      slidesPerView: 1.5,
+      spaceBetween: 5
     },
     // when window width is >= 480px
-    480: {
-      slidesPerView: 2.5,
-      spaceBetween: 15
+    500: {
+      slidesPerView: 1.5,
+      spaceBetween: 5
     },
     // when window width is >= 640px
-    640: {
-        
-        watchSlidesProgress: true,
+    880: {
       slidesPerView: 2.5,
       spaceBetween: 20
     }
