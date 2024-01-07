@@ -14,9 +14,6 @@ This is a solution to the [Single-page design portfolio challenge on Frontend Me
   - [Continued development](#continued-development)
 - [Author](#author)
 
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -54,8 +51,9 @@ Users should be able to:
 
 ### What I learned
 
-During this task I improved my usage of CSS custom properties, using them to pre-define font sizes for different layouts. I also learnt how to customise the swiper to make it resposive by editing the values for different breakpoints. See Code snippets below:
+During this challege I improved my usage of CSS custom properties, using them to pre-define font sizes for different layouts. I also learnt how to customise the swiper to make it resposive by editing the values for different breakpoints in JS. See Code snippets below:
 
+CSS Custom Properties Snippet:
 ```css
  --fs-body: var(--fs-300);
     --fs-heading-l: var(--fs-900);
@@ -71,6 +69,8 @@ During this task I improved my usage of CSS custom properties, using them to pre
     --fs-heading-m-mobile: var(--fs-450);
     --fs-heading-s-mobile: var(--fs-400);
 ```
+
+JS Snippet:
 ```js
   breakpoints: {
     // when window width is >= 320px
@@ -78,12 +78,12 @@ During this task I improved my usage of CSS custom properties, using them to pre
       slidesPerView: 1.5,
       spaceBetween: 5
     },
-    // when window width is >= 480px
+    // when window width is >= 500px
     500: {
       slidesPerView: 1.5,
       spaceBetween: 5
     },
-    // when window width is >= 640px
+    // when window width is >= 880px
     880: {
       slidesPerView: 2.5,
       spaceBetween: 20
@@ -94,7 +94,7 @@ During this task I improved my usage of CSS custom properties, using them to pre
 
 ### Continued development
 
-Going forward i'd like to focus on accesability, mobile first design and improve my understanding of JS.
+Going forward i'd like to focus on accesibility, mobile first design and improve my understanding of JS.
 
 
 ## Author
