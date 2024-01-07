@@ -154,7 +154,7 @@ body{
 }
 
 .header > .button:hover, .footer > .button:hover,
-.header > .button:focus-within, .footer > .button:focus-within{
+.header > .button:focus, .footer > .button:focus{
     background-color: var(--clr-accent-blue);
 }
 
@@ -358,7 +358,7 @@ body{
 }
 
 .cta-text .button:hover,
-.cta-text .button:focus-within{
+.cta-text .button:focus{
     background-color: var(--clr-accent-yellow);
 }
 
@@ -472,7 +472,7 @@ font-size: var(--fs-500);
 }
 
 .button-wrapper button:hover,
-.button-wrapper button:focus-within{
+.button-wrapper button:focus{
     background-color: var(--clr-accent-blue);
 }
 
@@ -518,7 +518,7 @@ font-size: var(--fs-500);
 }
 
 .cta-bottom-wrapper button:hover,
-.cta-bottom-wrapper button:focus-within{
+.cta-bottom-wrapper button:focus{
     background-color: var(--clr-accent-yellow);
 }
 
@@ -570,6 +570,16 @@ font-size: var(--fs-500);
 
 
 /* Utility Classes */
+
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 
 .text-primary-900{
     color: var(--clr-primary-900);
@@ -640,17 +650,7 @@ font-size: var(--fs-500);
   .text-center p {
     margin-inline: auto;
   }
-  
-  @media(max-width: 47em){
-    .text-center-sm-only{
-      text-align: center;
-    }
-  
-    .text-center-sm-only p{
-      margin-inline: auto;
-    }
-  } 
-  
+    
   .container{
     --max-width: 1110px;
     --container-padding: 1rem;
@@ -658,42 +658,9 @@ font-size: var(--fs-500);
     width: min(var(--max-width), 100% - var(--container-padding) * 2);
     margin-inline: auto;
   }
-  
-  .even-columns{
-    display: grid;
-    gap: 1rem;
-  }
-  
-  @media (min-width: 47em) {
-    .even-columns{
-      grid-auto-flow: column;
-      grid-auto-columns: 1fr;
-    }
-  }
-  
-  .justify-self-end{
-    justify-self: end;
-  }
-  
-  @media(min-width: 47em){
-    .justify-self-end-md{
-      justify-self: end;
-    }
-  }
-  
-  .vertical-align-center{
-    align-items: center;
-  }
-  
+
   :where(.flow :not(:first-child)){
   margin-top: var(--flow-spacer, 3em);
   }
   
-  .display-sm-none{
-    display: none;
-  }
   
-  @media(min-width: 47em){
-    .display-md-inline-flex{
-      display: inline-flex;
-  }}
