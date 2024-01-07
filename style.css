@@ -148,6 +148,7 @@ body{
     cursor: pointer;
     color: var(--clr-neautral-100);
     background-color: var(--clr-primary-900);
+    border: none;
     border-radius: 100vh;
     padding: .87rem 2.81rem ;
     transition: 200ms ease-in;
