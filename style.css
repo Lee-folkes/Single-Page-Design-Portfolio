@@ -150,12 +150,14 @@ body{
     background-color: var(--clr-primary-900);
     border-radius: 100vh;
     padding: .87rem 2.81rem ;
+    transition: 200ms ease-in;
 
 }
 
 .header > .button:hover, .footer > .button:hover,
 .header > .button:focus, .footer > .button:focus{
     background-color: var(--clr-accent-blue);
+    
 }
 
 .page-heading{
@@ -498,6 +500,7 @@ font-size: var(--fs-500);
   border-radius: 100%;
   width: 100%;
   top: 90%;
+  transition: 200ms ease-in;
 }
 
 /* swiper mobile layout */
